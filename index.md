@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# Paster
+![https://github.com/ghalbeyou](https://raw.githubusercontent.com/Ghalbeyou/Ghalbeyou/main/Paster.png)
 
-You can use the [editor on GitHub](https://github.com/Ghalbeyou/Paster/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A `paste` app saved in json without database written in [Python](https://www.python.org/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Its a simple `python` server built with `flask` on port of `5000` (default).
+## Install
+Its recommended to host this on server.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### First we clone the repository
+```bash
+gh clone ghalbeyou/Paster
 ```
+### then, we install the flask library
+```bash
+pip install flask
+```
+### then, we run the server
+```bash
+python main.py
+```
+and it will be running on port `5000`.
+## Usage
+Just open the host url in your browser. and if you want to remove a paste, just open the `pastes.json` file and remove the paste.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ghalbeyou/Paster/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+If you want to add a paste, just open the host url and go to /write.
+## License
+Its licensed on [`Appache-2.0`](LICENSE).
