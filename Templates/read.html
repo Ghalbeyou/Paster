@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>{{ past_title }} - Paster</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ past_title }} - Paster</h1>
+        <p>Here is paste:</p>
+        <textarea readonly>{{ past_body }}</textarea>
+    </div>
+</body>
+</html>
