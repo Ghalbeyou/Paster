@@ -40,7 +40,7 @@ def write_post():
     })
     with open('pastes.json', 'w') as f:
         json.dump(pastes, f)
-    return f"<p>Your paste has been submitted.<br/>ID for paste: {len(pastes)}<br/>URL: site-address.com/{len(pastes)}</p>"
+    return f"<p>Your paste has been submitted.<br/>ID for paste: {len(pastes)-1}<br/>URL: site-address.com/{len(pastes)-1}</p>"
 @app.route('/<int:id>')
 def read(id):
     # check if id is in pastes
