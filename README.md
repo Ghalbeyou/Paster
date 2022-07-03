@@ -5,7 +5,7 @@ A `paste` app saved in json without database written in [Python](https://www.pyt
 
 Its a simple `python` server built with `flask` on port of `5000` (default).
 ## Install
-Its recommended to host this server.
+Its recommended to host this on server.
 
 ### First we clone the repository
 ```bash
