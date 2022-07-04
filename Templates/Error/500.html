@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Write - Paster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <title>500 - Paster</title>
 </head>
 <body>
     <div class="container">
@@ -15,14 +15,8 @@
             <a href="/contact">Contact</a>
             <a href="https://github.com/ghalbeyou">Creator</a>
         </div>
-        <h1>Write new - paster</h1>
-        <form method="post">
-            <label>Title</label>
-            <br/><input required type="text" name="title" placeholder="Title">
-            <br/><label>Content</label>
-            <br/><textarea required name="body" placeholder="Content"></textarea>
-            <br/><button type="submit">Write</button>
-        </form>    <br/><br/><br/>
+        <h1>500 Forbidden - Paster</h1>
+        <p>{{ error }}</p>
         <div class="footer"><p>Paster 2022</p>
             <a href="/">Home</a>
             <a href="/about">About</a>

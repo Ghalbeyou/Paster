@@ -88,3 +88,164 @@ b{
     color: black;
     font-weight: bold;
 }
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+.menu a:active{
+    text-decoration: underline;
+}
+.menu a:visited{
+    text-decoration: underline;
+}
+.menu a:focus{
+    text-decoration: underline;
+}
+input{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+input:hover{
+    background-color: white;
+    color: black;
+}
+textarea{
+    width: 504px;
+    height: 219px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+textarea:hover{
+    background-color: white;
+    color: black;
+}
+.container input:hover{
+    background-color: white;
+    color: black;
+}
+.container textarea:hover{
+    background-color: white;
+    color: black;
+}
+.container input:active{
+    background-color: white;
+    color: black;
+}
+.container textarea:active{
+    background-color: white;
+    color: black;
+}
+.container input:visited{
+    background-color: white;
+    color: black;
+}
+.container textarea:visited{
+    background-color: white;
+    color: black;
+}
+.container input:focus{
+    background-color: white;
+    color: black;
+}
+.container textarea:focus{
+    background-color: white;
+    color: black;
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.btn:active{
+    background-color: white;
+    color: black;
+}
+.btn:visited{
+    background-color: white;
+    color: black;
+}
+.btn:focus{
+    background-color: white;
+    color: black;
+}
+.container .btn:hover{
+    background-color: white;
+    color: black;
+}
+.container .btn:active{
+    background-color: white;
+    color: black;
+}
+.container .btn:visited{
+    background-color: white;
+    color: black;
+}
+.container .btn:focus{
+    background-color: white;
+    color: black;
+}
+.container .btn:hover{
+    background-color: white;
+    color: black;
+}
+.container .btn:active{
+    background-color: white;
+    color: black;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    text-decoration: underline;
+}

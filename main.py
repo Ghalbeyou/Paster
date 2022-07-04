@@ -23,6 +23,8 @@ def write():
 def write_post():
     post_title = flask.request.form['title']
     post_body = flask.request.form['body']
+    if post_title == '' or post_body == '':
+        return "<p>Empty values!</p>"
     illegial = [
         '<',
         '>'
@@ -32,8 +34,10 @@ def write_post():
             return "Illegial Characters in Title"
         if i in post_body:
             return "Illegial Characters in Body"
-
-        # return "<p>Your paste has been rejected because it contains illegal characters.</p>"
+    if post_title in pastes:
+        post_title = f"{post_title}-{len(pastes)}"
+    if post_body in pastes:
+        return  "<p>Your paste is already in the database!</p>"
     pastes.append({
         'title': post_title,
         'body': post_body
@@ -47,6 +51,19 @@ def read(id):
     if id in range(len(pastes)):
         return flask.render_template('read.html', past_title=pastes[id]['title'], past_body=pastes[id]['body'])
     else:
-        return "<p>Paste not found.</p>"
+        return notfound("Paste not found")
+@app.route('/paste/<int:id>')
+def read_paste(id):
+    return read(id)
+@app.route('/new')
+def new():
+    return flask.redirect('/write')
 
+# Error handler
+@app.errorhandler(404)
+def notfound(error):
+    return flask.render_template('error/404.html', error=error)
+@app.errorhandler(500)
+def forbidden(error):
+    return flask.render_template('error/500.html', error=error)
 app.run(debug=True)
