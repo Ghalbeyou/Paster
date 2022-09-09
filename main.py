@@ -1,6 +1,6 @@
 import json
 import flask
-
+# Made by ghalbeyou
 app = flask.Flask(__name__)
 app.secret_key = 'Generate_A_Secret_Key_Here'
 pastes = []
