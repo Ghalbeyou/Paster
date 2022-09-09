@@ -9,15 +9,20 @@ with open('pastes.json', 'r') as f:
 # routes
 @app.route('/')
 def index():
+    print("[*] / was used")
     return flask.render_template('index.html', paster=len(pastes))
 @app.route('/about')
 def about():
+    print("[*] /about was used")
     return flask.render_template('about.html')
 @app.route('/contact')
 def contact():
+    print("[*] /contact was used")
     return flask.render_template('contact.html')
 @app.route('/write')
 def write():
+    print("[*] /write was used")
+
     return flask.render_template('write.html')
 @app.route('/write', methods=['POST'])
 def write_post():
